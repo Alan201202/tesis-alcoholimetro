@@ -1,0 +1,33 @@
+# config.py
+
+# --- MÓDULO A: PÁRPADOS ---
+LEFT_EYE = [362, 385, 387, 263, 373, 380]
+RIGHT_EYE = [33, 160, 158, 133, 153, 144]
+
+# --- MÓDULO B: OCULOMETRÍA E IRIS ---
+LEFT_IRIS = [474, 475, 476, 477]
+RIGHT_IRIS = [469, 470, 471, 472]
+LEFT_EYE_CORNER_L = 362
+LEFT_EYE_CORNER_R = 263
+RIGHT_EYE_CORNER_L = 33
+RIGHT_EYE_CORNER_R = 133
+
+# --- MÓDULO C: POSE CEFÁLICA (CABEZA) ---
+# Puntos clave 2D para la estimación Perspective-n-Point (PnP)
+NOSE_TIP = 1
+CHIN = 152
+LEFT_EYE_OUTER = 33
+RIGHT_EYE_OUTER = 263
+MOUTH_LEFT = 61
+MOUTH_RIGHT = 291
+
+# --- UMBRALES Y TIEMPOS ---
+CALIBRATION_TIME_SEC = 5.0
+EAR_THRESHOLD_FACTOR = 0.75
+SLOW_BLINK_THRESHOLD = 0.4
+MICROSLEEP_THRESHOLD = 1.5
+GAZE_JITTER_THRESHOLD = 0.015
+
+# Umbral de inclinación/cabeceo crítico de la cabeza (en grados)
+PITCH_DROP_THRESHOLD = -15.0  # Cabeceo pronunciado hacia abajo
+HEAD_VARIANCE_THRESHOLD = 12.0 # Inestabilidad postural

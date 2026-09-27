@@ -1,0 +1,21 @@
+# Entornos virtuales
+venv/
+env/
+ENV/
+
+# Caché de Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Archivos de datos o modelos binarios descargados
+face_landmarker.task
+*.pkl
+
+# Logs / VS Code / PyCharm
+.vscode/
+.idea/
+*.log
+
+# Si prefieren NO compartir el dataset aún (descomentar si no quieren subir el CSV)
+# data/dataset_features.csv
